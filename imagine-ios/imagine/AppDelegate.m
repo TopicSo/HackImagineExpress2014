@@ -18,14 +18,14 @@
     self.navigationController = [[UINavigationController alloc] init];
 
     BOOL logged = NO;
-    BOOL dateExpressIsExpired = NO;
+    BOOL modo_resultado = NO;
     
     if (logged)
     {
         self.me = [User createOriol];
     }
     
-    if (dateExpressIsExpired)
+    if (modo_resultado)
     {
         self.navigationController = [[UINavigationController alloc] initWithRootViewController:[[ResultViewController alloc] init]];
     }
