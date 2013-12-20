@@ -1,0 +1,16 @@
+{
+    "creativos": [
+        #{list items:creativos, as:'c' }
+        {
+            #{user user:c /}
+        }#{if !c_isLast},#{/if}
+        #{/list}
+    ],
+    "business": [
+        #{list items:business, as:'c' }
+        {
+            #{user user:c /}
+        }#{if !c_isLast},#{/if}
+        #{/list}
+    ]
+}

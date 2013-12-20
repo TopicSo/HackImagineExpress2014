@@ -1,0 +1,5 @@
+"userId": "${_user.id}",
+"username": "${_user.username}",
+"code": "${_user.code}",
+"avatar": "${_user.avatar}",
+"rank": ${_user.rank}

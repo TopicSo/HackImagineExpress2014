@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+
+GET /rank    Application.getRank(format:'json')
+GET /nextDate   Application.getNexts(format:'json')
+GET /result    Application.getResult(format:'json')
+POST /date    Application.postDate(format:'json')
+
+
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}
